@@ -17,6 +17,9 @@ Each task has the following fields, which correspond to a section on an Asana ta
 * **Due Date**: When the task is due for completion.
 * **Start Date**: (Optional) When the task is started.
 * **Deliverable**: This is the plain English deliverable for the task. It will be put as its own separate sentence at the top of the task description.
+* **Description**: Anything under this header will be put into the body of the task on Asana
+* **Body**: (Optional) This header contains any notes or connections related to the task. If, for example the task is to take notes on a given subject then this would contain the notes. It is for Obsidian use only.
+
 
 ### Note: Acceptable Date Formats
 Currently the only supported date format is `MM/DD/YYYY`, however more will be implemented soon.
