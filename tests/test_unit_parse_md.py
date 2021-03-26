@@ -1,5 +1,6 @@
 import os
 import pytest
+from obsidian_asana_plugin.parse_task import parse_md
 
 class ParseTests:
     def __init__(self):
@@ -9,5 +10,5 @@ class ParseTests:
     def test_parse_task(self):
         filename = os.path.join(self.basedir, "sampleTask.md")
         print(filename)
-        print(parse_task.parse_md(filename))
+        print(parse_md(filename))
         assert 0
