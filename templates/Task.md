@@ -1,3 +1,5 @@
+%% - metadata:
+	- tags: #task %%
 # Task
 **Status:** 
 **Priority:** 
@@ -6,7 +8,3 @@
 **Deliverable:** 
 ## Description
 
-## Body
-
----
-Tags: 
