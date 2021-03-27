@@ -16,15 +16,19 @@ def connect():
 
 def projects(client):
     "Gets a list of projects"
-    return client.projects.get_projects(opt_pretty=True)
+    # get the user of the client
+    me = client.users.me()
+    # find the workspace ID
+    projects_workspace = next(workspace for workspace in me['workspaces'] if workspace['name'] == 'Personal')
+    # return the results
+    return client.projects.find_by_workspace(projects_workspace['gid'], iterator_type=None)
 
 def main():
     "Executes the main workflow"
     # test the connection to the API
     client = connect()
-    print(client)
     # get a list of projects
-    print(projects(client))
+    current_projects = projects(client)
 
 if __name__ == "__main__":
     main()
